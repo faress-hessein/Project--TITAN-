@@ -135,7 +135,8 @@ nav .list li:hover {
   background-color: #d8cfcf59;
   color: var(--main-color);
 }
-nav li:not(.list li)::before {
+
+nav .menuBar li:first-of-type:not(.list li)::before {
   content: "\f078";
   font-family: var(--FontAwesome);
   font-weight: 800;
@@ -155,6 +156,10 @@ nav li:hover {
 }
 /*medium  */
 @media (max-width: 992px) {
+  nav .menuBar li:first-of-type:not(.list li)::before {
+    top: 10px;
+    right: 10px;
+  }
   nav .menu {
     display: block;
     font-size: 25px;
@@ -178,16 +183,11 @@ nav li:hover {
     width: 100%;
     padding: 10px;
   }
-  nav li:not(.list li)::before {
-    top: 10px;
-    right: 10px;
-  }
   nav li:hover .list {
     display: block;
     width: 100%;
     top: 35px;
     background-color: white;
-
     z-index: 15;
   }
   nav li:hover li {
@@ -783,7 +783,7 @@ section a:hover {
   background-size: cover;
   height: 100vh;
   position: relative;
-  margin: 100px 0;
+  margin-top: 100px;
 }
 .testimonial::before {
   content: "";
@@ -878,6 +878,9 @@ section a:hover {
 }
 /* end-testimonial */
 /* start-ContactUs */
+.ContactUs {
+  padding: 100px 0;
+}
 .ContactUs .container {
   display: flex;
   align-items: flex-start;

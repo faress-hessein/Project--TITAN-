@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>restaurant</title>
+    <link rel="icon" href="../images/icon.png" />
     <!-- et-line-font -->
     <link rel="stylesheet" href="../css/et-line-font/et-line-font.css" />
     <!-- fontawesome-css -->
@@ -22,82 +23,24 @@
             <a href="#home">
               home
               <ul class="list">
-                <a href="pages/one_page.html"><li>One Page</li></a>
-                <a href="pages/Portfolio.html"><li>Portfolio</li></a>
-                <a href="pages/restaurant.html"><li>restaurant</li></a>
-                <a href="pages/Finance.html"><li>Finance</li></a>
+                <a href="one_page.html"><li>One Page</li></a>
+                <a href="Portfolio.html"><li>Portfolio</li></a>
+                <a href="restaurant.html"><li>restaurant</li></a>
+                <a href="Finance.html"><li>Finance</li></a>
               </ul></a
             >
           </li>
           <li>
-            <a href="#home">
-              Headers
-              <ul class="list">
-                <a href="#"><li>Static Image</li></a>
-                <a href="#"><li>Flexslider</li></a>
-                <a href="#"><li>Video Background</li></a>
-                <a href="#"><li>Text Rotator</li></a>
-              </ul></a
-            >
+            <a href="#Services">Services</a>
           </li>
           <li>
-            <a href="#home">
-              Pages
-              <ul class="list">
-                <a href="#"><li>About 1</li></a>
-                <a href="#"><li>About 2</li></a>
-                <a href="#"><li>About 3</li></a>
-                <a href="#"><li>About 4</li></a>
-              </ul></a
-            >
+            <a href="#menu">menu</a>
           </li>
           <li>
-            <a href="#home">
-              Portfolio
-              <ul class="list">
-                <a href="#"><li>Boxed</li></a>
-                <a href="#"><li>Boxed - Gutter</li></a>
-                <a href="#"><li>Full Width</li></a>
-              </ul></a
-            >
+            <a href="#Reservations">Reservations</a>
           </li>
           <li>
-            <a href="#home">
-              blog
-              <ul class="list">
-                <a href="#"><li>Grid</li></a>
-                <a href="#"><li>Masonry</li></a>
-                <a href="#"><li>Single</li></a>
-              </ul></a
-            >
-          </li>
-          <li>
-            <a href="#home">
-              Features
-              <ul class="list">
-                <a href="#"><li>Alerts and Wells</li></a>
-                <a href="#"><li>Accordions</li></a>
-                <a href="#"><li>Contents Box</li></a>
-                <a href="#"><li>Progress Bars</li></a>
-              </ul></a
-            >
-          </li>
-          <li>
-            <a href="#home">
-              Shop
-              <ul class="list">
-                <a href="#"><li>columns 1</li></a>
-                <a href="#"><li>columns 2</li></a>
-              </ul></a
-            >
-          </li>
-          <li>
-            <a href="#home">
-              Documentation
-              <ul class="list">
-                <a href="#"><li>Contact Form</li></a>
-              </ul></a
-            >
+            <a href="#Contact"> Contact</a>
           </li>
         </ul>
       </div>
@@ -105,7 +48,7 @@
     <!-- end-nav -->
 
     <!-- start-Portfolio -->
-    <div class="restaurant-page">
+    <div class="restaurant-page" id="home">
       <div class="text">
         <p>Hello & welcome</p>
         <h1>our specialities</h1>
@@ -115,7 +58,7 @@
     <!-- end-Portfolio -->
 
     <!-- start-module -->
-    <div class="module">
+    <div class="module" id="Services">
       <p>For your comfort</p>
       <h2 class="special-heading">Our Services</h2>
       <div class="container">
@@ -148,12 +91,12 @@
     <!-- end-module -->
 
     <!-- start-blogPosts  -->
-    <div class="restaurant-blogPosts">
+    <div class="restaurant-blogPosts" id="menu">
       <p>Take a look at</p>
       <h2 class="special-heading">Our Specialities</h2>
       <div class="container">
         <div class="box">
-          <img src="../images/restaurant/kabab.jpg" />
+          <img src="../images/restaurant/kabab.jpg" loading="lazy" />
           <h5>Kabab</h5>
           <p>
             Careful attention to detail and clean, well structured code ensures
@@ -161,7 +104,7 @@
           </p>
         </div>
         <div class="box">
-          <img src="../images/restaurant/limes.jpg" />
+          <img src="../images/restaurant/limes.jpg" loading="lazy" />
           <h5>Limes</h5>
           <p>
             Careful attention to detail and clean, well structured code ensures
@@ -169,7 +112,7 @@
           </p>
         </div>
         <div class="box">
-          <img src="../images/restaurant/radish.jpg" />
+          <img src="../images/restaurant/radish.jpg" loading="lazy" />
           <h5>Radish</h5>
           <p>
             Careful attention to detail and clean, well structured code ensures
@@ -177,7 +120,7 @@
           </p>
         </div>
         <div class="box">
-          <img src="../images/restaurant/corn.jpg" />
+          <img src="../images/restaurant/corn.jpg" loading="lazy" />
           <h5>Corn</h5>
           <p>
             Careful attention to detail and clean, well structured code ensures
@@ -282,7 +225,7 @@
     <!-- end-Popular-module -->
 
     <!-- start-Table-module -->
-    <div class="Table-module">
+    <div class="Table-module" id="Reservations">
       <div class="container">
         <div class="col">
           <div>
@@ -326,14 +269,18 @@
           </div>
         </div>
         <div class="col">
-          <img src="../images/restaurant/Table-module.jpg" alt="restaurant" />
+          <img
+            src="../images/restaurant/Table-module.jpg"
+            alt="restaurant"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>
     <!-- end-Table-module -->
 
     <!-- start-footer -->
-    <footer>
+    <footer id="Contact">
       <div class="container">
         <div class="cols">
           <div class="col">
@@ -373,14 +320,14 @@
           <div class="col">
             <h5>Popular Posts</h5>
             <div class="box">
-              <img src="../images/rp-1.jpg" />
+              <img src="../images/rp-1.jpg" loading="lazy" />
               <div>
                 <li><a href="#">Designer Desk Essentials</a></li>
                 <span>23 january</span>
               </div>
             </div>
             <div class="box">
-              <img src="../images/rp-2.jpg" />
+              <img src="../images/rp-2.jpg" loading="lazy" />
               <div>
                 <li><a href="#">Realistic Business Card Mockup</a></li>
                 <span>15 February</span>
