@@ -919,7 +919,7 @@ section a:hover {
 .ContactUs form input:nth-child(3) {
   height: 50px;
 }
-.ContactUs form a {
+.ContactUs form button {
   width: 100%;
   text-align: center;
   background-color: var(--four-color);
@@ -933,8 +933,9 @@ section a:hover {
   cursor: pointer;
   opacity: 0.8;
   transition: var(--transition);
+  border: none;
 }
-.ContactUs form a:hover {
+.ContactUs form button:hover {
   opacity: 1;
 }
 .ContactUs .boxs {

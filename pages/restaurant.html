@@ -235,14 +235,30 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam,
             </p>
-            <form>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="autoShow"
+            >
+              <!-- Replace with your Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="16680311-061d-4dbf-b850-a051b1072d2f"
+              />
+              <input type="hidden" name="WEB SITE" value="Titan restaurant" />
               <div>
                 <i class="icon-calendar"></i>
-                <input class="date" type="date" placeholder="dd/mm/yyyy" />
+                <input
+                  class="date"
+                  type="date"
+                  placeholder="dd/mm/yyyy"
+                  name="Date"
+                />
               </div>
               <div>
                 <i class="icon-clock"></i>
-                <select type="text" id="Time">
+                <select type="text" id="Time" name="Time">
                   <option value="Time" disabled selected>Select Time</option>
                   <option value="1:30">1:30 pm</option>
                   <option value="3:00">3:00 pm</option>
@@ -258,13 +274,16 @@
                   placeholder="Number of people"
                   min="1"
                   max="50"
+                  name="Number of people"
                 />
               </div>
               <div>
                 <i class="icon-envelope"></i>
-                <input type="email" placeholder="your email*" />
+                <input type="email" placeholder="your email*" name="Email" />
               </div>
-              <button><i class="fa-regular fa-paper-plane"></i> Reserve</button>
+              <button type="submit">
+                <i class="fa-regular fa-paper-plane"></i> Reserve
+              </button>
             </form>
           </div>
         </div>

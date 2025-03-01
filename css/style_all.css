@@ -995,7 +995,7 @@ nav li:hover {
 .ContactUs form input:nth-child(3) {
   height: 50px;
 }
-.ContactUs form a {
+.ContactUs form button {
   width: 100%;
   text-align: center;
   background-color: var(--four-color);
@@ -1009,6 +1009,7 @@ nav li:hover {
   cursor: pointer;
   opacity: 0.8;
   transition: var(--transition);
+  border: none;
 }
 .ContactUs form a:hover {
   opacity: 1;
@@ -2187,8 +2188,6 @@ section a:hover {
 /* end-module-five */
 .module-five {
   min-height: 100vh;
-}
-.module-five .container {
 }
 .module-five .client {
   display: flex;
